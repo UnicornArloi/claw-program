@@ -28,7 +28,7 @@ The answer is required for the mint transaction to succeed.
 ## Contract Addresses
 
 ```
-Mint Contract:  0x1080EbFC70BC2a24BB229402340f43050CF591a0
+Mint Contract:  0x2d7714263d80e02089E98142b44Ec980B5523089
 CLAWP Token:    0x6Da8794e33549201B6d1a2559B57954dA6d6b3Cd
 Treasury:       0x8def3283a6fac005be6e6a2d97338ef282bc0c11
 ```
@@ -86,7 +86,7 @@ const { ethers } = require('ethers');
 const PRIVATE_KEY = 'USER_PRIVATE_KEY_HERE';
 const BNB_AMOUNT = '0.05'; // 0.01 - 0.1 BNB
 
-const MINT_CONTRACT = '0x1080EbFC70BC2a24BB229402340f43050CF591a0';
+const MINT_CONTRACT = '0x2d7714263d80e02089E98142b44Ec980B5523089';
 
 const provider = new ethers.JsonRpcProvider('https://bsc-dataseed.binance.org/');
 const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
