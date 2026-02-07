@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'VT323', monospace;
+  background: #0a0a0a;
+  color: #e8dcc8;
+  min-height: 100vh;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 4px solid #8b4513;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  color: #cd853f;
+}
+
+.badge {
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #8b4513;
+  font-size: 10px;
+  font-family: 'Press Start 2P', cursive;
+  color: #cd853f;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 30px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 4px solid #8b4513;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 32px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.hero h1 .neuro {
+  color: #4ade80;
+}
+
+.hero p {
+  color: #9a8c7a;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+}
+
+.hero-btn {
+  display: inline-block;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  padding: 15px 30px;
+  background: #4ade80;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.wallet-info {
+  display: inline-block;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #4ade80;
+  color: #4ade80;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+
+.balances {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.balance-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #5c4a3a;
+  padding: 20px;
+  text-align: center;
+}
+
+.balance-label {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8px;
+  color: #9a8c7a;
+  margin-bottom: 10px;
+}
+
+.balance-value {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 24px;
+  color: #4ade80;
+}
+
+.progress-section {
+  background: rgba(0, 0, 0, 0.8);
+  border: 4px solid #8b4513;
+  padding: 25px;
+  margin-bottom: 40px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  color: #d4c4a8;
+}
+
+.progress-header .green {
+  color: #4ade80;
+}
+
+.progress-header .red {
+  color: #ef4444;
+}
+
+.progress-bar {
+  height: 24px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #5c4a3a;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: repeating-linear-gradient(45deg, #8b4513, #8b4513 10px, #cd853f 10px, #cd853f 20px);
+  transition: width 0.5s;
+}
+
+.section-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #d4c4a8;
+  text-align: center;
+}
+
+.cmd-section {
+  margin-bottom: 40px;
+}
+
+.cmd-box {
+  background: rgba(0, 0, 0, 0.8);
+  border: 4px solid #4ade80;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cmd-box:hover {
+  border-color: #22c55e;
+}
+
+.cmd-text {
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+  color: #4ade80;
+  margin-bottom: 15px;
+}
+
+.cmd-hint {
+  font-size: 14px;
+  color: #9a8c7a;
+}
+
+.cmd-desc {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #9a8c7a;
+  text-align: center;
+}
+
+.steps-section {
+  margin-bottom: 40px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.step-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #5c4a3a;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.step-card:hover {
+  border-color: #4ade80;
+}
+
+.step-num {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 36px;
+  color: #8b4513;
+  margin-bottom: 15px;
+}
+
+.step-card h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  color: #4ade80;
+  margin-bottom: 12px;
+}
+
+.step-card p {
+  font-size: 16px;
+  color: #9a8c7a;
+}
+
+.info-section {
+  margin-bottom: 40px;
+}
+
+.contracts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.contract-item {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #5c4a3a;
+}
+
+.contract-label {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8px;
+  color: #9a8c7a;
+  margin-bottom: 10px;
+}
+
+.contract-value {
+  font-family: 'VT323', monospace;
+  font-size: 12px;
+}
+
+.contract-value a {
+  color: #cd853f;
+  text-decoration: none;
+}
+
+.contract-value a:hover {
+  text-decoration: underline;
+}
+
+.faq-section {
+  margin-bottom: 40px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #5c4a3a;
+  padding: 18px 20px;
+}
+
+.faq-q {
+  font-weight: bold;
+  font-size: 16px;
+  color: #d4c4a8;
+}
+
+.faq-a {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #9a8c7a;
+}
+
+.footer {
+  padding: 25px;
+  border-top: 4px solid #5c4a3a;
+  text-align: center;
+}
+
+.footer span {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8px;
+  color: #9a8c7a;
+}
+
+@media (max-width: 800px) {
+  .balances, .contracts-grid, .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+}
